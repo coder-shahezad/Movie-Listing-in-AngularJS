@@ -1,0 +1,859 @@
+/* Google Web Fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+
+/* ================= General ==================== */
+body{
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 14px;
+    line-height: 29px;
+    font-weight: 500;
+    color: #999;
+    background-color: #fff;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased !important;
+}
+html {
+    font-family: 'Raleway', sans-serif!important;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+/* Link style
+/* ------------------------------ */
+a {
+    color: #fff;
+}
+a,
+a > * {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:focus,
+a:hover {
+    color: #03a9f4;
+    outline: none;
+    text-decoration: none;
+}
+
+/* Transition elements
+/* ------------------------------ */
+a,
+.navbar a,
+.form-control {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+/* ================ Typography ================== */
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Raleway', sans-serif!important;
+    font-weight: 400;
+    color: #202020;
+    margin: 0 0 15px;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 12px;
+}
+p img { 
+    margin: 0; 
+}
+
+p {
+    margin: 0 0 30px;
+    line-height: 30px;
+}
+hr {
+    margin: 0;
+}
+
+/* Material Button Style
+/* ------------------------------ */
+.btn {
+       height: 35px;
+    padding: 5px 12px;
+    font-size: 12px;
+    line-height: 26px;
+    border-radius: 2px;
+    background-color: #03a9f4; /*brand primary color*/
+    border: 0;
+}
+.btn-lg {
+    padding: 12px 38px;
+}
+/*button size in extra small devices*/
+@media screen and (max-width: 767px) {
+    .btn-lg {
+        height: auto;
+        font-size: 14px;
+        padding: 8px 25px;
+    }
+}
+.btn:hover{
+    background-color: #03a9f4;
+}
+.btn.active, 
+.btn:active {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn.white,
+.btn.white:hover,
+.btn.white:focus {
+    color: #03a9f4;
+}
+.btn i.material-icons {
+    font-size: 20px;
+}
+.btn.focus, 
+.btn:focus, 
+.btn:hover {
+    color: #fff;
+}
+.btn:focus,
+button:focus {
+    outline: none !important;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+/* ================= Global Classes ==================== */
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.no-padding {
+    padding: 0 !important;
+}
+
+.section-padding {
+    padding: 110px 0;
+}
+
+/*margin top*/
+.mt-80 {
+    margin-top: 80px;
+}
+/*margin bottom*/
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
+/*padding-top*/
+
+.padding-top-120 {
+    padding-top: 120px;
+}
+/*padding-bottom*/
+.padding-bottom-200 {
+  padding-bottom: 200px;
+}
+
+.text-regular {
+    font-weight: 400 !important;
+}
+
+.text-medium {
+    font-weight: 500 !important;
+}
+
+.text-extrabold {
+    font-weight: 900 !important;
+}
+/* ================= Color Presets ==================== */
+
+.brand-bg {
+    background-color: #03a9f4 !important; /*theme primary background color*/
+}
+.gray-bg {
+   background-color: #f5f5f5!important;
+}
+
+/* ----------------------------------------------------------------
+Portfolio
+-----------------------------------------------------------------*/
+.portfolio-item {
+    float: left;
+}
+
+.portfolio-item .thumb {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-item .thumb img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*
+gutter
+---------------------------------------------------------*/
+.gutter .portfolio-item {
+    padding: 15px;
+}
+
+/*
+portfolio 3 grid
+--------------------------------------------------------*/
+.portfolio.col-3 .portfolio-item {
+    width: 33.3333333%;
+  
+}
+/*
+Portfolio Filter
+-------------------------------------------------------*/
+.portfolio-filter {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio-filter li {
+    display: inline-block;
+    color: #202020;
+    background-color: #eee;
+    padding: 7px 22px;
+    margin: 4px;
+    border-radius: 2px;
+    text-transform: capitalize;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.portfolio-filter li:hover,
+.portfolio-filter li.active {
+    color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+/*Preset Color*/
+.brand-filter li:hover {
+    background-color: #03a9f4;
+}
+.brand-filter li.active {
+    background-color: #03a9f4;
+}
+/* ----------------------------------------------------------------
+Portfolio Card Style
+-----------------------------------------------------------------*/
+
+.portfolio-item .card .card-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px!important;
+    color: #202020;
+}
+.portfolio-item .card .card-title i {
+    color: #03a9f4;
+    line-height: 30px;
+}
+.portfolio-item .card .card-content p a{
+    color: #999;
+}
+.portfolio-item .card .card-content p a:hover{
+    color: #03a9f4;
+}
+
+.portfolio-item .card .card-reveal {
+    padding: 30px;
+    background-color: rgba(5, 170, 244, 0.95);
+    color: #fff;
+}
+.portfolio-item .card .card-reveal p {
+    line-height: 24px;
+}
+.portfolio-item .card .card-reveal .card-title {
+    color: #fff;
+    font-weight: 700;
+}
+.portfolio-item .card .card-reveal p a,
+.portfolio-item .card .card-reveal .card-title i {
+    color: #fff;
+}
+
+.portfolio-item .card .card-reveal a.readmore {
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/*
+Responsive Media 
+-------------------------------------------------------------*/
+@media screen and (max-width: 992px) {
+
+    /*portfolio   grid*/
+    
+    .portfolio.col-3 .portfolio-item{
+        width: 33.3333333%;
+        /*width: 50%;*/
+    }
+
+}
+@media screen and (max-width: 800px) {
+
+    /*portfolio   grid*/
+    .portfolio.col-3 .portfolio-item{
+        /*width: 33.3333333%;*/
+        width: 50%;
+    }
+}
+@media screen and (max-width: 640px) {
+    /*portfolio   grid*/
+    .portfolio.col-3 .portfolio-item{
+        width: 100%;
+        /*width: 50%;*/
+    }
+}
+/*------------------------------------------------------------------
+Footer
+-------------------------------------------------------------------*/
+.footer h2 {
+    margin-bottom: 24px;
+}
+.footer p {
+    color: #c9f0ff;
+}
+
+.footer-one .primary-footer {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.secondary-footer {
+    padding: 27px 0;
+}
+
+.copy-text a{
+    color: #fff;
+}
+.copy-text,
+.copy-text a:hover{
+    color: #81ddff;
+}
+
+/*
+Back To Top
+----------------------------------------------------*/
+.footer .container {
+    position: relative;
+}
+.back-top {
+    position: absolute!important;
+    top: -116px;
+    right: 0;
+}
+.back-top i {
+    font-size: 4rem!important;
+}
+.back-top.white i {
+    color: inherit;
+}
+
+
+
+/* 
+Social Link Widget
+------------------------------------------------ */
+.social-link {
+    margin-bottom: 0;
+}
+.social-link li {
+    display: inline-block;
+}
+.social-link li a i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.social-link li a i{
+    color: #fff;
+}
+
+.social-link li a i:hover {
+    color: #03a9f4 ;
+    background: #fff;
+}
+
+.social-link.dark li a i{
+    color: #202020;
+}
+.social-link.dark li a i:hover {
+    color: #fff ;
+    background: #03a9f4;
+}
+
+
+/* 
+Important Link Widget
+------------------------------------------------ */
+.footer-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer-list li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.footer-list li:last-child {
+    border-bottom: 0;
+}
+.footer-list li a {
+    display: block;
+    line-height: 45px;
+    color: #c9f0ff;
+}
+.footer-list li a:hover {
+    color: #fff;
+}
+
+
+/* 
+Twitter Widget
+------------------------------------------------ */
+.twitter-widget-wrapper a{
+    color: #fff;
+    word-break: break-word;
+}
+.twitter-widget-wrapper a:hover{
+    color: #c9f0ff;
+}
+
+.twitter-widget-wrapper p{
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+.twitter-widget-wrapper ul li+li {
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.twitter-widget-wrapper .user span img{
+    display: none;
+}
+.twitter-widget-wrapper .timePosted {
+    font-size: 13px
+}
+
+
+
+/* 
+Subscription Widget
+------------------------------------------------ */
+.primary-footer .widget .form-control {
+    height: 40px;
+    border: 1px solid #1ebef9!important;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 0 0 0 12px;
+}
+.primary-footer .form-control:focus {
+    border: 1px solid #c9f0ff!important;
+    box-shadow: none!important;
+}
+.primary-footer .form-group input[type="text"],
+.primary-footer .form-group input[type="email"] {
+    color: #c9f0ff;
+    background-color: #0288d1;
+    width: 76%;
+    float: left;
+}
+
+.primary-footer.brand-bg .form-group input::-webkit-input-placeholder {
+   color: #c9f0ff;
+}
+.primary-footer.brand-bg .form-group input::-moz-placeholder {
+   color: #c9f0ff;  
+}
+.primary-footer.brand-bg .form-group input:-ms-input-placeholder {  
+   color: #c9f0ff; 
+}
+
+.primary-footer .form-group {
+    margin-bottom: 20px;
+}
+.primary-footer .form-group button {
+    float: left;
+    width: 15%;
+    background: #fff;
+    border: 1px solid transparent;
+    height: 40px;
+    color: #0288d1;
+}
+.primary-footer .form-group button i {
+    width: 100%;
+    height: 100%;
+    line-height: 36px;
+}
+
+
+
+/* 
+Tag Cloud Widget
+------------------------------------------------ */
+.widget-tags a {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.widget-tags a:hover {
+    color: #fff;
+    background-color: #0288d1;
+    border: 1px solid transparent;
+}
+
+@media (max-width: 991px) {
+    .footer .widget {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------
+Footer 2
+-------------------------------------------------------------------*/
+
+.footer-two .primary-footer {
+    padding: 90px 0;
+}
+.footer-two .footer-logo img{
+    margin-bottom: 30px;
+}
+
+.footer-two .back-top {
+    top: -122px;
+}
+
+.footer-two .social-link li a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+
+
+/*------------------------------------------------------------------
+Footer 3
+-------------------------------------------------------------------*/
+
+.footer-three .primary-footer {
+    padding: 90px 0 70px;
+}
+.footer-three .secondary-footer {
+    padding: 0 0 20px;
+}
+.footer-three .secondary-footer hr {
+    margin-top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.footer-three .social-link {
+    text-align: right;
+}
+.footer-three .social-link li a {
+    color: #0379ae;
+}
+.footer-three .social-link li a:hover {
+    color: #fff;
+}
+
+.footer-three .back-top {
+    right: 50%;
+    margin-right: -35px;
+}
+
+@media (max-width: 991px) {
+    .copy-text {
+        text-align: center;
+        display: block;
+    }
+    .footer-three .social-link {
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+
+/*------------------------------------------------------------------
+Footer 4
+-------------------------------------------------------------------*/
+
+.footer-four .social-link li+li {
+    margin-left: 15px;
+}
+
+.footer-four .social-link li a {
+    line-height: 14px;
+}
+.footer-four .social-link li a i{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.footer-four .social-link li a i:hover {
+    color: #0379ae;
+}
+
+.footer-four hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.footer-four .footer-logo {
+    margin: 45px 0 35px;
+}
+.footer-intro p {
+    margin: 0 auto 70px;
+}
+
+@media (min-width: 992px) {
+    .footer-intro p {
+        width: 60%;
+    }
+}
+
+.footer-four .secondary-footer {
+    padding: 18px 0;
+}
+.footer-four .secondary-footer ul {
+    margin: 0;
+}
+.footer-four .secondary-footer ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.footer-four .secondary-footer ul li:last-child{
+    margin-right: 0;
+}
+.footer-four .secondary-footer ul li a{
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.footer-four .secondary-footer ul li a:hover {
+    color: #81ddff;
+}
+
+.footer-four .back-top {
+    top: -35px;
+}
+
+@media (max-width: 767px) {
+    .footer-intro p {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* Intro CSS for Demo landing page. */
+.intro-page .tt-nav {
+  height: 85px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.intro-page .tt-nav .logo-brand{
+    line-height: 85px;
+}
+.intro-page .tt-nav.sticky .logo-brand{
+    line-height: 60px;
+}
+.intro-page .tt-nav .logo-brand {
+    margin: 20px 30px 0 0;
+}
+.intro-page .tt-nav.sticky .logo-brand {
+    margin: 15px 30px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .intro-page .tt-nav .logo-brand {
+      margin: 0;
+  }
+  
+  .intro-page .tt-nav .logo-brand{
+      line-height: 20px;
+  }
+
+}
+.intro-page .card-body {
+    padding: 20px 30px;
+}
+.intro-page .card-title h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.intro-page .card-title h2 span {
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    background: #03a9f4;
+    padding: 6px 5px;
+    border-radius: 2px;
+    text-transform: capitalize;
+    position: relative;
+    top: -3px;
+}
+.intro-page .card-title h2 span+span {
+  margin-left: 4px;
+}
+.intro-page .card {
+  -webkit-transition: box-shadow .3s ease;
+  -moz-transition: box-shadow .3s ease;
+  -o-transition: box-shadow .3s ease;
+  transition: box-shadow .3 ease;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, -0.84), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.intro-page .card:hover {
+  box-shadow: 0 1px 25px 0 rgba(0, 0, 0, 0.16), 0 6px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+
+
+.center {
+    margin-top:50px;   
+}
+
+.modal-header {
+    padding-bottom: 5px;
+}
+
+.modal-footer {
+        padding: 0;
+    }
+    
+.modal-footer .btn-group button {
+    height:40px;
+    border-top-left-radius : 0;
+    border-top-right-radius : 0;
+    border: none;
+    border-right: 1px solid #ddd;
+}
+    
+.modal-footer .btn-group:last-child > button {
+    border-right: 0;
+}
+
+    .float-label-control { position: relative; margin-bottom: 1.5em; }
+    .float-label-control ::-webkit-input-placeholder { color: transparent; }
+    .float-label-control :-moz-placeholder { color: transparent; }
+    .float-label-control ::-moz-placeholder { color: transparent; }
+    .float-label-control :-ms-input-placeholder { color: transparent; }
+    .float-label-control input:-webkit-autofill,
+    .float-label-control textarea:-webkit-autofill { background-color: transparent !important; -webkit-box-shadow: 0 0 0 1000px white inset !important; -moz-box-shadow: 0 0 0 1000px white inset !important; box-shadow: 0 0 0 1000px white inset !important; }
+    .float-label-control input, .float-label-control textarea, .float-label-control label { font-size: 1.3em; box-shadow: none; -webkit-box-shadow: none; }
+    .float-label-control input:focus,
+    .float-label-control textarea:focus { box-shadow: none; -webkit-box-shadow: none; border-bottom-width: 2px; padding-bottom: 0; }
+    .float-label-control textarea:focus { padding-bottom: 4px; }
+    .float-label-control input, .float-label-control textarea { display: block; width: 100%; padding: 0.1em 0em 1px 0em; border: none; border-radius: 0px; border-bottom: 1px solid #aaa; outline: none; margin: 0px; background: none; }
+    .float-label-control textarea { padding: 0.1em 0em 5px 0em; }
+    .float-label-control label { position: absolute; font-weight: normal; top: -1.0em; left: 0.08em; color: #aaaaaa; z-index: -1; font-size: 0.85em; -moz-animation: float-labels 300ms none ease-out; -webkit-animation: float-labels 300ms none ease-out; -o-animation: float-labels 300ms none ease-out; -ms-animation: float-labels 300ms none ease-out; -khtml-animation: float-labels 300ms none ease-out; animation: float-labels 300ms none ease-out; /* There is a bug sometimes pausing the animation. This avoids that.*/ animation-play-state: running !important; -webkit-animation-play-state: running !important; }
+    .float-label-control input.empty + label,
+    .float-label-control textarea.empty + label { top: 0.1em; font-size: 1.5em; animation: none; -webkit-animation: none; }
+    .float-label-control input:not(.empty) + label,
+    .float-label-control textarea:not(.empty) + label { z-index: 1; }
+    .float-label-control input:not(.empty):focus + label,
+    .float-label-control textarea:not(.empty):focus + label { color: #aaaaaa; }
+    .float-label-control.label-bottom label { -moz-animation: float-labels-bottom 300ms none ease-out; -webkit-animation: float-labels-bottom 300ms none ease-out; -o-animation: float-labels-bottom 300ms none ease-out; -ms-animation: float-labels-bottom 300ms none ease-out; -khtml-animation: float-labels-bottom 300ms none ease-out; animation: float-labels-bottom 300ms none ease-out; }
+    .float-label-control.label-bottom input:not(.empty) + label,
+    .float-label-control.label-bottom textarea:not(.empty) + label { top: 3em; }
+
+
+@keyframes float-labels {
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: -1em; opacity: 1; }
+}
+
+@-webkit-keyframes float-labels {
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: -1em; opacity: 1; }
+}
+
+@keyframes float-labels-bottom {
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: 3em; opacity: 1; }
+}
+
+@-webkit-keyframes float-labels-bottom {
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: 3em; opacity: 1; }
+}
+
+
+
+
+
+
